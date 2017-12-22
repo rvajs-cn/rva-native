@@ -1,3 +1,3 @@
-import { AppRegistry } from 'react-native';
-import App from './screens/App';
-AppRegistry.registerComponent('rvanative', () => App);
+import {AppRegistry} from 'react-native'
+import App from './src/App'
+AppRegistry.registerComponent('rvanative', () => App)
