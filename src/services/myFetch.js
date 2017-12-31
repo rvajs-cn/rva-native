@@ -61,6 +61,8 @@ async function myFetch({
           if (statusCode === 200) {
             resolve({data: {}})
           }
+          if (__DEV__)
+            console.log('non-json:', path, options, statusCode, jsonStr)
           reject({
             code: statusCode,
             message: jsonStr
