@@ -58,7 +58,7 @@ async function myFetch({
             console.log(path, 'myFetch - exception return', err)
           }
         } catch (err) {
-          if (statusCode === 400) {
+          if (statusCode === 200) {
             resolve({data: {}})
           }
           reject({
